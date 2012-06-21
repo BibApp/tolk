@@ -68,11 +68,11 @@ module Tolk
       end
 
       def filter_out_i18n_keys(flat_hash)
-        flat_hash.reject { |key, value| key.starts_with? "i18n" }
+        flat_hash.reject { |key, value| key.start_with? "i18n" }
       end
 
       def filter_out_personalize_keys(flat_hash)
-        flat_hash.reject {|key, value| key.starts_with? "personalize"}
+        flat_hash.reject {|key, value| key.start_with? "personalize"}
       end
     end
   end

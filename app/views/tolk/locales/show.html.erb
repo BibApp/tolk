@@ -42,7 +42,7 @@
                 <%= format_i18n_value(phrase.translations.primary.text) -%>
               <% end -%>
               <span class="key" title="<%= phrase.key %>"><%= truncate(phrase.key, :length => 100) %></span>
-              <% if phrase.key.starts_with('jsperanto') %>
+              <% if phrase.key.start_with?('jsperanto') %>
                 <em>JSperanto - use interpolation syntax "some fixed text __keyname__"</em>
               <% end %>
             </td>
